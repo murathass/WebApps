@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Effects 2</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		
+		$("#document").ready(function() {
+
+			$("#button").click(function() {
+
+				var element = document.getElementById("div1");
+				var style = element.getAttribute("style");
+				var styleArr = style.split(";");
+
+				if (!style.includes("display")) {
+					$("#div1").fadeOut();
+					$("#div2").fadeOut();
+					$("#div3").fadeOut();
+				}
+
+				styleArr.forEach(function(stil){
+				    var parsestyle = stil.split(":");
+				   	var style1= parsestyle[0]; 
+				    var style2= parsestyle[1];
+			    	console.log("1:"+style1+" 2:"+style2);
+
+				    if(style1.trim() === "display" ){           
+				     	   if(style2.trim() === "none"){
+
+				     	   		$("#div1").fadeIn();
+								$("#div2").fadeIn();
+								$("#div3").fadeIn();
+
+				     	   	}
+				    }
+	    		})    
+
+			});
+
+		});
+
+	</script>
+</head>
+<body>
+
+	<button id="button">Click</button>
+	<div id="div1" style="width: 80px;height: 80px;margin: 10px;background-color: red;"></div>
+	<div id="div2" style="width: 80px;height: 80px;margin: 10px;background-color: green;"></div>
+	<div id="div3" style="width: 80px;height: 80px;margin: 10px;background-color: blue;"></div>
+
+</body>
+</html>

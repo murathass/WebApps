@@ -1,0 +1,25 @@
+img{
+	width: 300px;
+	height: 300px;
+}
+
+
+
+button{
+	height: 30px;
+	width: 100px;
+	border: none;
+	border-radius: 7%;
+	background-color: green;
+	color: white;
+}
+
+#sil{
+	background: red;
+}
+
+
+.buyut{
+	width: 600px;
+	height: 600px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create Element</title>
+</head>
+<body>
+
+	<div id="div1">
+		<p id="p1">Yazi</p>
+		<p id="p2">Yazi</p>
+
+		<ol>
+			<li id="list1">List 1</li>
+
+		</ol>
+
+		<input type="text" name="text1" id="textid">
+	</div>
+
+	<button>OK</button>
+
+	<script type="text/javascript">
+		var button = document.querySelector("button");
+		button.addEventListener("click",function() {
+			var div1 = document.getElementById("list1");
+			var parag = document.createElement("li");
+			var text = document.getElementById("textid").value;
+			document.getElementById("textid").value = "";
+			var node = document.createTextNode(text);
+			parag.appendChild(node);
+			div1.appendChild(parag);
+		})
+	</script>
+</body>
+</html>

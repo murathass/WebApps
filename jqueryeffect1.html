@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Effects</title>
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.js"
+  integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="
+  crossorigin="anonymous"></script>
+
+ 	<script type="text/javascript">
+ 		
+ 		$(document).ready(function(){
+ 			$("#sakla").click(function() {
+ 				$("p").hide();
+ 			});
+ 			$("#goster").click(function() {
+ 				$("p").show();
+ 			});
+ 		});
+
+ 	</script>
+</head>
+<body>
+	<p>Yazım</p>
+
+	<button id="sakla">Sakla</button>
+	<button id="goster">Göster</button>
+</body>
+</html>

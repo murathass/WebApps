@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>İnner JS</title>
+</head>
+<body>
+
+	<div
+	onmouseover="tsk(this)"
+	onmouseout="out(this)"
+	style="background-color: red; width: 120px; height: 20px;"
+	>
+		
+	</div>
+
+	<script type="text/javascript">
+		function tsk(obj) {
+			obj.innerHTML = "Murat";
+		}
+
+		function out(obj) {
+			obj.innerHTML = "Has";
+		}
+	</script>
+
+</body>
+</html>

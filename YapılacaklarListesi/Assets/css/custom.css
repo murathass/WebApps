@@ -1,0 +1,78 @@
+html{
+	background: #BBD2C5;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%
+	font-family: "Indie Flower", cursive;
+	font-size: 20px;
+	color: white;
+}
+
+body{	
+	width: 300px;
+	margin: auto; 
+	margin-top: 100px;
+	padding: auto;
+	
+}
+
+i{
+	background-color: red;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 4px;
+	padding-bottom: : 10px;
+	display: inline-block;
+	margin: 5px;
+	width: 0px;
+	transition: 0.3s linear;
+	border-radius: 4px;
+	opacity: 0;
+}
+
+li:hover i{
+	width: 40px;
+	height: 30px;
+	text-align: center;
+	opacity: 1;
+}
+
+.completed{
+	color: gray;
+	text-decoration: line-through;
+}
+
+input{
+	margin-left: 30px;
+	font-size: 20px;
+	background: #BBD2C5;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-repeat: no-repeat;
+	color: white;
+	border-color: black;
+
+}
+
+h2{
+	border:2px solid black;
+	font-size: 31px;
+	margin: 30px auto;
+}
+
+ul{
+	list-style-type: none;
+}
+
+li:nth-child(2n){
+	background-color: darkblue;
+}
+
+li{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
